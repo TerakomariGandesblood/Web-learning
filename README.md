@@ -10,7 +10,3 @@ Web learning notes
 ## Reference
 
 - [Web](https://developer.mozilla.org/zh-CN/docs/Learn/Getting_started_with_the_web)
-
----
-
-Thanks to [JetBrains](https://www.jetbrains.com/) for donating product licenses to help develop this project <a href="https://www.jetbrains.com/"><img src="logo/jetbrains.svg" width="94" align="center" /></a>
