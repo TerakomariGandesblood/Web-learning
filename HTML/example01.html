@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>example01</title>
+  </head>
+  <body>
+    <!--无论在 HTML 元素的内容中使用多少空格 (包括空白字符, 包括换行), 当渲染这些代码的时候
+      HTML 解释器会将连续出现的空白字符减少为一个单独的空格符-->
+    <p>
+      123321 2343454
+      2233442222222222222222222222222222222222222222222222222222222222222222222
+    </p>
+    <!--实体引用: 在HTML中包含特殊字符-->
+    <!--&lt; &gt; &quot; &apos; &amp;-->
+    <!--see https://en.wikipedia.org/wiki/List_of_XML_and_HTML_character_entity_references-->
+
+    <!--斜体强调 (不应该为了获得斜体而使用它)-->
+    <p><em>你好世界</em></p>
+    <!--着重强调 (不应该为了获得粗体而使用它)-->
+    <p><strong>你好世界</strong></p>
+    <!--块级元素在页面中以块的形式展现, 相对于其前面的内容它会出现在新的一行, 其后的内容也会被挤到下一行展现-->
+    <!--如段落、列表、导航菜单、页脚等-->
+    <!--浏览器有着默认的展示 <p> 元素的 CSS styling-->
+    <!--内联元素通常出现在块级元素中并环绕文档内容的一小部分, 不会导致换行-->
+    <!--如超链接, 强调元素等-->
+    <!--NOTE HTML5 重新定义了元素的类别-->
+
+    <!--title: 鼠标悬停时显示-->
+    <!--target: 指定链接如何呈现出来, _blank: 新标签页中显示链接-->
+    <a
+      href="https://www.mozilla.org/zh-CN/about/manifesto/"
+      title="Mozilla 宣言"
+      target="_blank"
+      rel="noopener"
+      >Mozilla 宣言</a
+    >
+
+    <!--disabled: 布尔属性-->
+    <input type="text" title="123" disabled />
+    <input type="text" title="123" />
+  </body>
+</html>
