@@ -3,7 +3,6 @@
     "formulahendry.code-runner",
     "visualstudioexptteam.vscodeintellicode",
     "ritwickdey.liveserver",
-    "ms-edgedevtools.vscode-edge-devtools",
     "esbenp.prettier-vscode"
   ]
 }
