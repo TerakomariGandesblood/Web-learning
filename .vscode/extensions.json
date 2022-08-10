@@ -1,8 +1,7 @@
 {
   "recommendations": [
-    "formulahendry.code-runner",
     "visualstudioexptteam.vscodeintellicode",
-    "ritwickdey.liveserver",
+    "ms-vscode.live-server",
     "esbenp.prettier-vscode"
   ]
 }
