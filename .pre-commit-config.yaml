@@ -37,11 +37,11 @@ repos:
     hooks:
       - id: markdownlint-cli2
   - repo: https://github.com/rhysd/actionlint
-    rev: v1.6.16
+    rev: v1.6.17
     hooks:
       - id: actionlint
   - repo: https://github.com/zricethezav/gitleaks
-    rev: v8.11.0
+    rev: v8.11.2
     hooks:
       - id: gitleaks
   - repo: https://github.com/commitizen-tools/commitizen
