@@ -37,7 +37,7 @@ repos:
     hooks:
       - id: markdownlint-cli2
   - repo: https://github.com/rhysd/actionlint
-    rev: v1.6.17
+    rev: v1.6.18
     hooks:
       - id: actionlint
   - repo: https://github.com/zricethezav/gitleaks
@@ -45,7 +45,7 @@ repos:
     hooks:
       - id: gitleaks
   - repo: https://github.com/commitizen-tools/commitizen
-    rev: v2.32.5
+    rev: v2.34.0
     hooks:
       # https://github.com/conventional-commits/conventionalcommits.org
       - id: commitizen
