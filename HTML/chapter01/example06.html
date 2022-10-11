@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <title>example06</title>
+  </head>
+  <body>
+    <!--也可以是 <article> 或 <section> 的子元素-->
+    <header>
+      <h1>页眉</h1>
+    </header>
+
+    <!--不应包含二级链接-->
+    <nav>
+      <ul>
+        <li><a href="#">主页</a></li>
+      </ul>
+
+      <form>
+        <input type="search" name="search" placeholder="要搜索的内容" />
+        <input type="submit" value="搜索" />
+      </form>
+    </nav>
+
+    <!--放每个页面独有的内容，只能用一次-->
+    <main>
+      <article>
+        <h2>文章</h2>
+        <section>
+          <h3>section 1</h3>
+        </section>
+
+        <section>
+          <h3>section 2</h3>
+        </section>
+      </article>
+
+      <aside>
+        <h2>相关链接</h2>
+        <ul>
+          <li><a href="#">链接</a></li>
+        </ul>
+      </aside>
+
+      <!--块级无语义元素-->
+      <div></div>
+      <!--内联无语义元素-->
+      <span></span>
+
+      <!--<br> 换行-->
+      <p>
+        从前有个人叫小高<br />
+        他说写 HTML 感觉最好<br />
+        但他写的代码结构语义一团糟<br />
+        他写的标签谁也懂不了。
+      </p>
+      <!--水平分割线-->
+      <hr />
+      <p>
+        从前有个人叫小高<br />
+        他说写 HTML 感觉最好<br />
+        但他写的代码结构语义一团糟<br />
+        他写的标签谁也懂不了。
+      </p>
+    </main>
+
+    <footer>
+      <p>页脚</p>
+    </footer>
+  </body>
+</html>

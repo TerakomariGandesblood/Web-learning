@@ -1,0 +1,6 @@
+/*
+  CSS 背景图片只是为了装饰，没有语义
+*/
+p {
+  background-image: url(dinosaur.jpg);
+}

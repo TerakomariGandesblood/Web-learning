@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <title>example03</title>
+  </head>
+  <body>
+    <!--<iframe> 元素旨在允许将其他 Web 文档嵌入到当前文档中-->
+    <!--frameborder：如果设置为 1，则会告诉浏览器在此框架和其他框架之间绘制边框，这是默认行为。
+      0 删除边框。不推荐这样设置，因为在 CSS 中可以更好地实现相同的效果。border: none;-->
+    <!--sandbox：提高安全性-->
+    <!-- 为了提高速度，在主内容完成加载后，使用 JavaScript 设置 iframe 的 src 属性是个好主意。
+      这使页面可以更快地被使用，并减少官方页面加载时间（重要的 SEO 指标）-->
+    <iframe
+      width="560"
+      height="315"
+      src="https://www.youtube.com/embed/fJ5UgyuACLE"
+      title="YouTube video player"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen
+      ><p>不支持</p></iframe
+    >
+  </body>
+</html>

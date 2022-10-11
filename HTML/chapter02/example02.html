@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <title>example02</title>
+    <script src="main.js" defer></script>
+  </head>
+  <body>
+    <!--使用 controls 来包含浏览器提供的控件界面-->
+    <!--当浏览器不支持 <video> 标签的时候，就会显示 <video> 标签的内容（后备内容）-->
+    <!--视频会保持它原始的长宽比，设置的尺寸没有保持长宽比，视频边框会被拉伸，用背景颜色填充-->
+    <!--autoplay 立即播放-->
+    <!--loop 循环播放-->
+    <!--muted 默认关闭声音-->
+    <!--preload 缓冲大文件，none：不缓冲，auto：页面加载后缓存媒体文件，metadata：仅缓冲文件的元数据-->
+    <video
+      controls
+      autoplay
+      loop
+      muted
+      width="400"
+      height="400"
+      poster="poster.png"
+      preload="auto"
+    >
+      <!--浏览器将会检查 <source> 标签，并且播放第一个与其自身 codec 相匹配的媒体-->
+      <!--浏览器也会通过检查 type 这个属性来迅速的跳过那些不支持的格式。如果没有添加 type 属性，浏览器会尝试加载每一个文件-->
+      <!--MIME types 列表：https://www.iana.org/assignments/media-types/media-types.xhtml-->
+      <source src="rabbit320.webm" type="video/webm" />
+      <source src="rabbit320.mp4" type="video/mp4" />
+      <p>
+        你的浏览器不支持 HTML5 视频。可点击<a href="rabbit320.mp4">此链接</a
+        >观看
+      </p>
+      <!--NOTE 可以使用 <track> 标签，WebVTT 格式的文本显示音轨文本-->
+    </video>
+
+    <button>load</button>
+
+    <!--<audio> 没有width/height/poster，其他和 <video> 相同-->
+    <audio controls>
+      <source src="viper.mp3" type="audio/mp3" />
+    </audio>
+  </body>
+</html>

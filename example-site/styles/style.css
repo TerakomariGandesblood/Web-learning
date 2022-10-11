@@ -1,0 +1,73 @@
+/*
+  层叠样式表（Cascading Style Sheet，简称：CSS），是为网页添加样式的样式表语言
+*/
+
+/*
+  p -> 选择器，选择一个或多个需要添加样式的元素，用逗号分隔
+  color -> 属性
+  red -> 属性的值
+  color: red; -> 声明
+  整个结构 -> 规则集
+*/
+/*
+p {
+  color: red;
+}
+*/
+
+/*
+  <html> 是整个页面的父元素，它所有的子元素都会继承相同的属性
+*/
+html {
+  /*
+    px：像素（pixels）
+    sans-serif：无衬线体，https://zh.wikipedia.org/wiki/无衬线体
+  */
+  font-size: 16px;
+  font-family: "Open Sans", sans-serif;
+  background-color: #00539f;
+}
+
+body {
+  /* 元素的宽度 */
+  width: 600px;
+  /* 内边距，围绕着内容的空间 */
+  /* 上右下左 */
+  padding: 0 20px 20px 20px;
+  /* 边框，紧接着内边距的线 */
+  /* 5 像素的黑色实线 */
+  border: 5px solid black;
+  /* 外边距，围绕元素外部的空间 */
+  /* 第一个值代表垂直方向，第二个值代表水平方向，auto 是一个特殊的值，意思是水平方向上左右对称 */
+  margin: 0 auto;
+  background-color: #ff9500;
+}
+
+h1 {
+  font-size: 60px;
+  text-align: center;
+  padding: 20px 0;
+  margin: 0;
+  color: #00539f;
+  /* 为元素内的文本设置阴影 */
+  /* 第一个值设置水平偏移值，即阴影右移的像素数(负值左移) */
+  /* 第二个值设置垂直偏移值，即阴影下移的像素数(负值上移) */
+  /* 第三个值设置阴影的模糊半径，值越大产生的阴影越模糊 */
+  /* 第四个值设置阴影的基色 */
+  text-shadow: 3px 3px 1px black;
+}
+
+p,
+li {
+  font-size: 16px;
+  /* 行高，后面可以跟不同的参数，如果是数字，就是当前字体大小乘上数字 */
+  line-height: 2;
+  /* 字间距 */
+  letter-spacing: 1px;
+}
+
+img {
+  /* 图片是内联元素，不具备块级元素的一些功能，所以为了使图像有外边距，我们必须给予其块级行为 */
+  display: block;
+  margin: 0 auto;
+}

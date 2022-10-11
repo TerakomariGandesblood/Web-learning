@@ -1,16 +1,15 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="zh-CN">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>example05</title>
   </head>
   <body>
-    <!--描述列表 (description list), 标记一组项目及其相关描述-->
+    <!--描述列表（description list），标记一组项目及其相关描述-->
     <dl>
       <!--description term-->
       <dt>内心独白</dt>
-      <!--description definition-->
+      <!--description definition，可以有多个-->
       <dd>
         戏剧中，某个角色对自己的内心活动或感受进行念白表演，这些台词只面向观众，而其他角色不会听到。
       </dd>
@@ -24,8 +23,8 @@
       </dd>
     </dl>
 
-    <!--blockquote: 块引用, cite: 引用来源, 其不会被浏览器显示, 屏幕阅读器阅读-->
-    <!--<code>: 用于标记计算机通用代码-->
+    <!--blockquote：块引用, cite：引用来源, 其不会被浏览器显示、屏幕阅读器阅读-->
+    <!--<code>：用于标记计算机通用代码-->
     <blockquote
       cite="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/blockquote"
     >
@@ -36,7 +35,7 @@
       </p>
     </blockquote>
 
-    <!--<cite>: 引用 (Citation) 标签-->
+    <!--<cite>：引用 (Citation) 标签-->
     <p>
       According to the
       <a
@@ -46,7 +45,7 @@
       >:
     </p>
 
-    <!--<q>: 行内引用-->
+    <!--<q>：行内引用-->
     <p>
       你好！欢迎访问我的激励网页！<a
         href="http://www.brainyquote.com/quotes/authors/c/confucius.html"
@@ -67,27 +66,27 @@
       >。）
     </p>
 
-    <!--<abbr>: 缩略语-->
+    <!--<abbr>：缩略语-->
     <p>
       我们使用
       <abbr title="超文本标记语言 (Hyper text Markup Language)">HTML</abbr
       >来组织网页文档
     </p>
 
-    <!--<address>: 联系方式-->
+    <!--<address>：联系方式-->
     <address>
       <p>Chris Mills, Manchester, The Grim North, UK</p>
     </address>
 
-    <!--<sub>: 下标-->
+    <!--<sub>：下标-->
     <p>
       咖啡因的化学方程式是
       C<sub>8</sub>H<sub>10</sub>N<sub>4</sub>O<sub>2</sub>。
     </p>
-    <!--<sup>: 上标-->
+    <!--<sup>：上标-->
     <p>如果 x<sup>2</sup> 的值为 9，那么 x 的值必为 3 或 -3。</p>
 
-    <!--<pre>: 用于保留空白字符-->
+    <!--<pre>：用于保留空白字符-->
     <pre><code>const para = document.querySelector('p');
 
       para.onclick = function() {
@@ -99,17 +98,18 @@
       <code>&lt;center&gt;</code> 等表象元素。
     </p>
 
-    <!--<var>: 变量名-->
+    <!--<var>：变量名-->
     <p>在上述的 JavaScript 示例中，<var>para</var> 表示一个段落元素。</p>
 
-    <!--<kbd>: 电脑的键盘(或其他类型)输入-->
+    <!--<kbd>：电脑的键盘(或其他类型)输入-->
     <p>按 <kbd>Ctrl</kbd>/<kbd>Cmd</kbd> + <kbd>A</kbd> 选择全部内容。</p>
 
-    <!--<samp>: 计算机程序的输出-->
+    <!--<samp>：计算机程序的输出-->
     <pre>$ <kbd>ping mozilla.org</kbd>
       <samp>PING mozilla.org (63.245.215.20): 56 data bytes
       64 bytes from 63.245.215.20: icmp_seq=0 ttl=40 time=158.233 ms</samp></pre>
 
+    <!--<time> 元素允许附上清晰的、可被机器识别的时间/日期，还支持很多不同的格式-->
     <time datetime="2016-01-20">2016年1月20日</time>
   </body>
 </html>

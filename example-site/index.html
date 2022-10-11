@@ -1,0 +1,55 @@
+<!--超文本标记语言 (Hypertext Markup Language，简称：HTML)，是一种告知浏览器如何组织页面的标记语言 -->
+
+<!--浏览器、网络服务器和编程语言对空格的处理并不一致，文件名中不应使用空格-->
+<!--文件名中应使用连字符，因为谷歌搜索把连字符当作单词的分隔符，但不会识别下划线-->
+
+<!--文档类型，仅用于保证文档正常读取-->
+<!DOCTYPE html>
+<!--包含整个页面的内容，也称作根元素-->
+<!--标签不区分大小写，最好使用小写-->
+<html lang="zh-CN">
+  <!--该元素的内容对用户不可见-->
+  <head>
+    <meta charset="UTF-8" />
+    <link href="styles/style.css" rel="stylesheet" />
+    <link href="https://fonts.font.im/css?family=Open+Sans" rel="stylesheet" />
+    <!--不是一定需要放到 <head> 里-->
+    <!--注意这不是一个空元素，可以将脚本放进元素的内容中-->
+    <!--浏览器会按照代码在文件中的顺序加载 HTML-->
+    <!--如果先加载的 JavaScript 期望修改其下方的 HTML，那么它可能由于 HTML 尚未被加载而失效-->
+    <!--defer 告诉浏览器在解析完成 HTML 后再加载 JavaScript-->
+    <script src="scripts/main.js" defer></script>
+    <!--也被作为建议的书签名-->
+    <title>测试页面</title>
+  </head>
+  <!--该元素包含期望让用户在访问页面时看到的内容-->
+  <body>
+    <!--标题（Heading），h1-h6-->
+    <h1>Mozilla 酷毙了！</h1>
+    <!--不包含任何内容的元素称为空元素-->
+    <!--alt：图像的描述内容-->
+    <img
+      src="images/firefox-icon.png"
+      alt="Firefox 标志：一只盘旋在地球上的火狐"
+    />
+    <!--段落（Paragraph）-->
+    <p>Mozilla 是一个全球社区，这里聚集着来自五湖四海的</p>
+    <!--列表（List）-->
+    <ul>
+      <li>技术人员</li>
+      <li>思考者</li>
+      <li>建造者</li>
+    </ul>
+    <p>
+      我们致力于让 Internet
+      保持活力，保持畅通，人人皆可贡献，人人皆可创造。我们坚信：开放平台的协作对于人的发展至关重要，也决定着我们共同的未来。
+    </p>
+    <p>
+      为了达成我们共同的理想，我们遵循一系列的价值观和理念，请参阅
+      <!--锚 (anchor)，herf: 超文本引用（hypertext reference）-->
+      <a href="https://www.mozilla.org/zh-CN/about/manifesto/">Mozilla 宣言</a
+      >。
+    </p>
+    <button type="button">切换用户</button>
+  </body>
+</html>

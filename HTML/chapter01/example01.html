@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <title>example01</title>
+  </head>
+  <body>
+    <!--无论在 HTML 元素的内容中使用多少空格 (包括空白字符，包括换行)，当渲染这些代码的时候
+      HTML 解释器会将连续出现的空白字符减少为一个单独的空格符-->
+
+    <!--实体引用：在HTML中包含特殊字符-->
+    <!--&lt; &gt; &quot; &apos; &amp;-->
+    <!--see https://en.wikipedia.org/wiki/List_of_XML_and_HTML_character_entity_references-->
+
+    <!--斜体强调 (不应该为了获得斜体而使用它)-->
+    <p><em>你好世界</em></p>
+    <!--着重（粗体）强调 (不应该为了获得粗体而使用它)-->
+    <p><strong>你好世界</strong></p>
+    <!--块级元素在页面中以块的形式展现，相对于其前面的内容它会出现在新的一行，其后的内容也会被挤到下一行展现-->
+    <!--如段落、列表、导航菜单、页脚等-->
+    <!--块级元素不会被嵌套进内联元素中，但可以嵌套在其它块级元素中-->
+    <!--内联元素通常出现在块级元素中并环绕文档内容的一小部分，不会导致换行-->
+    <!--如超链接，强调元素等-->
+    <!--NOTE HTML5 重新定义了元素的类别，与上述分类有些区别-->
+
+    <!--title：鼠标悬停时显示-->
+    <!--target：指定链接如何呈现出来，_blank：新标签页中显示链接-->
+    <a
+      href="https://www.mozilla.org/zh-CN/about/manifesto/"
+      title="Mozilla 宣言"
+      target="_blank"
+      >Mozilla 宣言</a
+    >
+
+    <!--disabled：布尔属性，此处含义是防止用户输入-->
+    <input type="text" title="123" disabled />
+    <input type="text" title="123" />
+  </body>
+</html>

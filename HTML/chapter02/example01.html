@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <link href="style.css" rel="stylesheet" />
+    <title>example01</title>
+  </head>
+  <body>
+    <!--说明文字，<figure> 里不必须是图片-->
+    <figure>
+      <!--搜索引擎也读取图像的文件名并把它们计入 SEO-->
+      <!--NOTE 在得到授权之前永远不要把你的src属性指向其他人网站上的图片。这被称为"盗链（hotlinking）"-->
+      <!--像 <img> 和 <video> 这样的元素有时被称之为替换元素，因为这样的元素的内容和尺寸由外部资源（像是一个图片或视频文件）所定义，而不是元素自身-->
+      <!--如果需要改变图片的尺寸，应该使用 CSS 而不是 HTML-->
+      <img
+        src="dinosaur.jpg"
+        alt="一只恐龙头部和躯干的骨架，它有一个巨大的头，长着锋利的牙齿。"
+        width="400"
+        height="341"
+      />
+      <!--因为当图片无法显示时，它们会同时出现，说明文字和 alt 的内容不应该一样-->
+      <figcaption>曼彻斯特大学博物馆展出的一只霸王龙的化石</figcaption>
+    </figure>
+
+    <p>一个图片</p>
+  </body>
+</html>
