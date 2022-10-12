@@ -10,20 +10,14 @@ on:
 
 jobs:
   build:
-    strategy:
-      matrix:
-        platform:
-          - { os: "macos-latest", target: "x86_64-apple-darwin" }
-
-    runs-on: ${{ matrix.platform.os }}
+    runs-on: macos-latest
 
     steps:
       # https://github.com/actions/checkout
       - name: Checkout
         uses: actions/checkout@v3
 
-      # https://github.com/creyD/prettier_action
       - name: Prettify code
-        uses: creyD/prettier_action@v4.2
-        with:
-          prettier_options: --check .
+        run: |
+          npm install --location=global prettier
+          prettier --check .
