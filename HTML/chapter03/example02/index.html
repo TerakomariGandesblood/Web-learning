@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link href="style.css" rel="stylesheet" type="text/css" />
+
+    <style>
+      tbody {
+        font-size: 90%;
+        font-style: italic;
+      }
+
+      tfoot {
+        font-weight: bold;
+      }
+    </style>
+
+    <title>example02</title>
+  </head>
+  <body>
+    <!--表格可以嵌套，但是通常不建议-->
+    <table>
+      <!--表格标题-->
+      <caption>
+        How I chose to spend my money
+      </caption>
+
+      <!--<thead>, <tfoot>, 和 <tbody> 在应用样式和布局上会起到作用，可以更好地让 CSS 应用到表格上-->
+
+      <!--放在 <col>/<colgroup> 后面-->
+      <thead>
+        <tr>
+          <th>Purchase</th>
+          <th>Location</th>
+          <th>Date</th>
+          <th>Evaluation</th>
+          <th>Cost (€)</th>
+        </tr>
+      </thead>
+
+      <!--<tbody> 总是包含在每个表中，如果你没有在代码中指定它，那就是隐式的-->
+      <tbody>
+        <tr>
+          <td>Haircut</td>
+          <td>Hairdresser</td>
+          <td>12/09</td>
+          <td>Great idea</td>
+          <td>30</td>
+        </tr>
+        <tr>
+          <td>Lasagna</td>
+          <td>Restaurant</td>
+          <td>12/09</td>
+          <td>Regrets</td>
+          <td>18</td>
+        </tr>
+        <tr>
+          <td>Shoes</td>
+          <td>Shoeshop</td>
+          <td>13/09</td>
+          <td>Big regrets</td>
+          <td>65</td>
+        </tr>
+        <tr>
+          <td>Toothpaste</td>
+          <td>Supermarket</td>
+          <td>13/09</td>
+          <td>Good</td>
+          <td>5</td>
+        </tr>
+      </tbody>
+
+      <tfoot>
+        <tr>
+          <td colspan="4">SUM</td>
+          <td>118</td>
+        </tr>
+      </tfoot>
+    </table>
+
+    <table>
+      <tr>
+        <td>&nbsp;</td>
+        <!--scope 属性，可以添加在 <th> 元素中，用来帮助屏幕阅读设备更好地理解那些标题单元格-->
+        <!--还有 colgroup 和 rowgroup，这些用于位于多个列或行的顶部的标题-->
+        <!--NOTE 如果要替代 scope 属性，可以使用 id 和 headers 属性来创造标题与单元格之间的联系-->
+        <!--列标题-->
+        <th scope="col">Knocky</th>
+        <th scope="col">Flor</th>
+        <th scope="col">Ella</th>
+        <th scope="col">Juan</th>
+      </tr>
+      <tr>
+        <!--行标题-->
+        <th scope="row">Breed</th>
+        <td>Jack Russell</td>
+        <td>Poodle</td>
+        <td>Streetdog</td>
+        <td>Cocker Spaniel</td>
+      </tr>
+      <tr>
+        <th scope="row">Age</th>
+        <td>16</td>
+        <td>9</td>
+        <td>10</td>
+        <td>5</td>
+      </tr>
+      <tr>
+        <th scope="row">Owner</th>
+        <td>Mother-in-law</td>
+        <td>Me</td>
+        <td>Me</td>
+        <td>Sister-in-law</td>
+      </tr>
+      <tr>
+        <th scope="row">Eating Habits</th>
+        <td>Eats everyone's leftovers</td>
+        <td>Nibbles at food</td>
+        <td>Hearty eater</td>
+        <td>Will eat till he explodes</td>
+      </tr>
+    </table>
+  </body>
+</html>

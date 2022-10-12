@@ -20,7 +20,7 @@ p {
 */
 html {
   /*
-    px：像素（pixels）
+    px：像素（pixels）：https://developer.mozilla.org/zh-CN/docs/Glossary/CSS_pixel
     sans-serif：无衬线体，https://zh.wikipedia.org/wiki/无衬线体
   */
   font-size: 16px;

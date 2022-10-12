@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>example05</title>
+    <!--强制地让手机浏览器采用它们真实可视窗口的宽度来加载网页-->
+    <!--有些手机浏览器会提供不真实的可视窗口宽度，然后加载比浏览器真实可视窗口的宽度大的宽度的网页，然后再缩小加载的页面，这样的做法对响应式图片或其他设计，没有任何帮助-->
+    <meta name="viewport" content="width=device-width" />
+  </head>
+  <body>
+    <!--响应式图片——一种可以在不同的屏幕尺寸和分辨率的设备上都能良好工作以及其他特性的图片-->
+    <!--srcset 定义了我们允许浏览器选择的图像集，以及每个图像的大小-->
+    <!--第二个参数是图像的固有宽度（以像素为单位）-->
+    <!--sizes 定义了一组媒体条件（例如屏幕宽度）并且指明当某些媒体条件为真时，什么样的图片尺寸是最佳选择-->
+    <!--第一个参数是媒体条件，当可视窗口的宽度是 480px 或更少当媒体条件为真时，图像将填充的槽的宽度（440px）-->
+    <!--没有媒体参数的是默认值，当浏览器匹配第一个媒体条件时，剩下的将被忽略-->
+    <!--浏览器会加载 srcset 列表中引用的最接近所选的槽大小的图像-->
+    <img
+      srcset="
+        elva-fairy-320w.jpg 320w,
+        elva-fairy-480w.jpg 480w,
+        elva-fairy-800w.jpg 800w
+      "
+      sizes="(max-width: 320px) 280px,(max-width: 480px) 440px, 800px"
+      src="elva-fairy-800w.jpg"
+      alt="Elva dressed as a fairy"
+    />
+
+    <br />
+
+    <!--如果设备有高分辨率，一个 CSS 像素表示两个或更多的设备像素，elva-fairy-640w.jpg 会被加载-->
+    <img
+      srcset="
+        elva-fairy-320w.jpg,
+        elva-fairy-480w.jpg 1.5x,
+        elva-fairy-640w.jpg 2x
+      "
+      src="elva-fairy-640w.jpg"
+      alt="Elva dressed as a fairy"
+    />
+
+    <br />
+
+    <picture>
+      <!--第一个条件返回真，那么就会显示这张图片-->
+      <!--仅仅当在美术设计场景下使用 media 属性；当使用 media 时，不要在 sizes 属性中也提供媒体条件-->
+      <source
+        media="(max-width: 799px)"
+        srcset="elva-480w-close-portrait.jpg"
+      />
+      <source media="(min-width: 800px)" srcset="elva-800w.jpg" />
+      <!--当媒体条件都不返回真的时候，它会提供图片；如果浏览器不支持 <picture> 元素时，它可以作为后备方案-->
+      <img
+        src="elva-800w.jpg"
+        alt="Chris standing up holding his daughter Elva"
+      />
+    </picture>
+
+    <picture>
+      <!--可以在type属性中提供 MIME 类型，这样浏览器就能立即拒绝其不支持的文件类型-->
+      <source type="image/svg+xml" srcset="pyramid.svg" />
+      <source type="image/webp" srcset="pyramid.webp" />
+      <img
+        src="pyramid.png"
+        alt="regular pyramid built from four equilateral triangles"
+      />
+    </picture>
+  </body>
+</html>
