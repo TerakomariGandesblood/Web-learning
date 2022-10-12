@@ -1,4 +1,4 @@
-// JavaScript 为网站提供动态交互特性
+// JavaScript 是一门动态编程语言，为网站提供动态交互特性
 
 // === -> 相等
 // !== -> 不相等
@@ -19,7 +19,7 @@ let h1 = document.querySelector("h1");
 
 function setUserName() {
   let name = prompt("请输入你的名字");
-  // null 或者空
+  // null 或者为 empty
   // 取消提示对话框后值将设置为 null，这是 JavaScript 中的一个特殊值，表示引用不存在
   if (!name) {
     setUserName();
