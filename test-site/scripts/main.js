@@ -3,7 +3,7 @@
 // === -> 相等
 // !== -> 不相等
 
-// 文档对象模型 (DOM)
+// 文档对象模型（DOM）
 // see https://developer.mozilla.org/zh-CN/docs/Web/API/Document_Object_Model/Introduction
 let image = document.querySelector("img");
 image.onclick = function () {
