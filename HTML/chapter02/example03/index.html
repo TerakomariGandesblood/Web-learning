@@ -8,19 +8,24 @@
   <body>
     <!--<iframe> 元素旨在允许将其他 Web 文档嵌入到当前文档中-->
     <!--frameborder：如果设置为 1，则会告诉浏览器在此框架和其他框架之间绘制边框，这是默认行为。
-      0 删除边框。不推荐这样设置，因为在 CSS 中可以更好地实现相同的效果。border: none-->
-    <!--sandbox：提高安全性-->
-    <!-- 为了提高速度，在主内容完成加载后，使用 JavaScript 设置 iframe 的 src 属性是个好主意。
+      0 删除边框，不推荐这样设置，因为在 CSS 中可以更好地实现相同的效果。border: none-->
+    <!--sandbox：提高安全性，建议始终使用，注意不能同时添加 allow-scripts 和 allow-same-origin
+      在这种情况下，嵌入式内容可以绕过阻止站点执行脚本的同源安全策略，并使用 JavaScript 完全关闭沙盒-->
+    <!--NOTE 为了提高速度，在主内容完成加载后，使用 JavaScript 设置 iframe 的 src 属性是个好主意。
       这使页面可以更快地被使用，并减少官方页面加载时间（重要的 SEO 指标）-->
+    <!--NOTE 注意版权和许可条款-->
+    <!--NOTE 不能使用 HTTP 嵌入第三方内容，HTTPS 可以防止嵌入式内容访问你的父文档中的内容-->
     <iframe
       width="560"
       height="315"
-      src="https://www.youtube.com/embed/fJ5UgyuACLE"
+      src="https://www.youtube-nocookie.com/embed/fJ5UgyuACLE"
       title="YouTube video player"
       frameborder="0"
       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
       allowfullscreen
       ><p>不支持</p></iframe
     >
+
+    <!--NOTE 可以通过配置 CSP 指令，防止其他网站在其网页中嵌入你的内容：https://developer.mozilla.org/zh-CN/docs/Web/HTTP/Headers/X-Frame-Options -->
   </body>
 </html>
