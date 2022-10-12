@@ -1,6 +1,4 @@
-/*
-  层叠样式表（Cascading Style Sheet，简称：CSS），是为网页添加样式的样式表语言
-*/
+/* 层叠样式表（Cascading Style Sheet，简称：CSS），是为网页添加样式的样式表语言 */
 
 /*
   p -> 选择器，选择一个或多个需要添加样式的元素，用逗号分隔
@@ -15,15 +13,11 @@ p {
 }
 */
 
-/*
-  <html> 是整个页面的父元素，它所有的子元素都会继承相同的属性
-*/
+/* <html> 是整个页面的父元素，它所有的子元素都会继承相同的属性 */
 html {
-  /*
-    px：CSS 像素（pixels），96px 为屏幕上的一英寸，1px = PPI / 96 个像素：https://developer.mozilla.org/zh-CN/docs/Glossary/CSS_pixel
-    sans-serif：无衬线体，https://zh.wikipedia.org/wiki/无衬线体
-  */
+  /* px：CSS 像素（pixels），96px 为屏幕上的一英寸，1px = PPI / 96 个像素：https://developer.mozilla.org/zh-CN/docs/Glossary/CSS_pixel */
   font-size: 16px;
+  /* sans-serif：无衬线体，https://zh.wikipedia.org/wiki/无衬线体 */
   font-family: "Open Sans", sans-serif;
   background-color: #00539f;
 }

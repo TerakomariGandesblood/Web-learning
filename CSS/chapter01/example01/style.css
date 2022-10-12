@@ -8,9 +8,7 @@ li {
 }
 
 li {
-  /*
-    使用 none 可以移除浏览器的默认样式
-  */
+  /* 使用 none 可以移除浏览器的默认样式 */
   list-style-type: square;
 }
 

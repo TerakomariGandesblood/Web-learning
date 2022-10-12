@@ -1,0 +1,57 @@
+/* 导入额外的样式表 */
+@import "style2.css";
+
+h2 {
+  color: red;
+}
+
+/* 后面的样式将覆盖以前的样式 */
+h2 {
+  color: blue;
+}
+
+/* 因为类选择器更加具体，或者具有更多的特异性，所以选择这条规则 */
+.special {
+  color: red;
+}
+
+h3 {
+  color: blue;
+}
+
+/* NOTE 如果属性未知或某个值对给定属性无效，则声明被视为无效，并被浏览器的 CSS 引擎完全忽略 */
+/* NOTE 相似的，当浏览器遇到无法解析的选择器的时候，他会直接忽略整个选择器规则 */
+
+.outer {
+  border: 5px solid black;
+}
+
+.box {
+  padding: 10px;
+  /* 包含块宽度的 90% 减去 30px */
+  width: calc(90% - 30px);
+  background-color: rebeccapurple;
+  color: red;
+}
+
+.box2 {
+  margin: 100px;
+  width: 100px;
+  height: 200px;
+  background-color: rebeccapurple;
+  /* transform 属性旋转、缩放、倾斜或平移给定元素 */
+  /* rotate 函数定义了一种将元素围绕一个定点旋转而不变形的转换，参数为正则顺时针 */
+  /* turn：圈数 */
+  transform: rotate(0.2turn);
+}
+
+body {
+  background-color: pink;
+}
+
+@media (min-width: 30em) {
+  body {
+    /* em 为当前 font-size 的倍数 */
+    background-color: blue;
+  }
+}
