@@ -1,0 +1,60 @@
+h1 {
+  color: red;
+}
+
+p,
+li {
+  color: green;
+}
+
+li {
+  /*
+    使用 none 可以移除浏览器的默认样式
+  */
+  list-style-type: square;
+}
+
+/* 使用 class name */
+.special {
+  color: orange;
+  font-weight: bold;
+}
+
+/* 可以和 HTML 元素选择器一起出现 */
+li.special {
+  color: orange;
+  font-weight: bold;
+}
+
+/* 包含选择符，选择 <li> 内部的任何 <em> 元素 */
+li em {
+  color: rebeccapurple;
+}
+
+/* 相邻选择符，选择标题后面并且与标题具有相同层级的段落 */
+h1 + p {
+  font-size: 200%;
+}
+
+/* 根据状态确定样式 */
+/* 未访问的 */
+a:link {
+  color: pink;
+}
+
+/* 访问过的 */
+a:visited {
+  color: green;
+}
+
+/* 鼠标悬停时 */
+a:hover {
+  text-decoration: none;
+}
+
+/* 可以混合使用 */
+body h1 + p .special {
+  color: yellow;
+  background-color: black;
+  padding: 5px;
+}

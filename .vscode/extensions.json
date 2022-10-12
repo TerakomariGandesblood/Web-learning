@@ -1,6 +1,7 @@
 {
   "recommendations": [
     "dbaeumer.vscode-eslint",
+    "solnurkarim.html-to-css-autocompletion",
     "visualstudioexptteam.vscodeintellicode",
     "ms-vscode.live-server",
     "esbenp.prettier-vscode",
