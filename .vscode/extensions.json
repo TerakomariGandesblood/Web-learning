@@ -1,8 +1,10 @@
 {
   "recommendations": [
+    "dbaeumer.vscode-eslint",
     "visualstudioexptteam.vscodeintellicode",
     "ms-vscode.live-server",
     "esbenp.prettier-vscode",
+    "stylelint.vscode-stylelint",
     "celianriboulet.webvalidator"
   ]
 }
