@@ -1,0 +1,49 @@
+/* 选择器所选择的元素，叫做“选择器的对象” */
+
+/* 选择器列表 */
+/* 当任何一个选择器无效，整条规则都会被忽略 */
+h1,
+.special {
+  color: blue;
+}
+
+/* 元素选择器 */
+h1 {
+  color: blue;
+}
+
+/* 类选择器 */
+.box {
+  color: blue;
+}
+
+/* ID 选择器 */
+#unique {
+  color: blue;
+}
+
+/* 属性选择器，根据属性是否存在 */
+a[title] {
+  color: blue;
+}
+
+/* 根据属性的值 */
+a[href="https://example.com"]
+{
+  color: blue;
+}
+
+/* 伪类选择器 */
+a:hover {
+  color: blue;
+}
+
+/* 伪元素选择器，<p> 中的第一行 */
+p::first-line {
+  color: blue;
+}
+
+/* >：直接子代组合器，直接嵌套在 <article> 中 <p> */
+article > p {
+  color: blue;
+}

@@ -1,0 +1,89 @@
+/* CSS 值（也可以叫做数据类型）倾向于使用尖括号表示，如 <color> */
+/* 当看到值 <color> 对特定属性有效时，这意味着可以使用任何有效的 <color> 作为该属性的值 */
+
+/* <integer>：整数 */
+/* <number>：小数*/
+/* <dimension>：<number> + 单位*/
+/* <percentage>：百分数（相对于父元素） */
+
+/*
+  <length>：长度
+  绝对长度单位：cm、mm、Q（1/40th of 1cm）、in（英寸）、pc（1/6th of 1in）
+  pt（1/72th of 1in）、px
+  绝对长度单位：em、ex（字符“x”的高度）、ch（数字“0”的宽度）、rem（根元素（<html>）的字体大小）
+  lh（元素的 line-height）、vw（视区宽度的 1%）、vh（视区高度的 1%）
+  vmin（视区较小尺寸的 1%）、vmax（视区较大尺寸的 1%）
+*/
+
+.wrapper {
+  font-size: 1em;
+}
+
+.wrapper .px {
+  width: 200px;
+}
+
+.wrapper .vw {
+  width: 20vw;
+}
+
+.wrapper .em {
+  width: 10em;
+}
+
+html {
+  font-size: 16px;
+}
+
+.ems li {
+  font-size: 1.3em;
+}
+
+.rems li {
+  font-size: 1.3rem;
+}
+
+.wrapper2 {
+  width: 400px;
+  border: 5px solid rebeccapurple;
+}
+
+.wrapper2 .px {
+  border: 5px solid black;
+  width: 200px;
+}
+
+.wrapper2 .percent {
+  border: 5px solid black;
+  width: 40%;
+}
+
+.wrapper3 .box {
+  /* 不透明度，0（完全透明）和 1（完全不透明） */
+  opacity: 0.3;
+  /* <color> */
+  color: #02798b;
+  color: rgb(2, 121, 139);
+  /* 第四个值表示颜色的 alpha 通道，它控制不透明度。如果将这个值设置为 0，它将使颜色完全透明 */
+  /* 当你使用不透明度时，你让元素和它里面的所有东西都不透明，而使用 RGBA 颜色只让你指定的颜色不透明 */
+  color: rgba(2, 121, 139, 0.3);
+  /* 别名，表现完全相同 */
+  color: rgb(2, 121, 139, 0.3);
+  /* 色调、饱和度、亮度 */
+  color: hsl(188, 97%, 28%);
+  /* 同 RGBA */
+  color: hsla(188, 97%, 28%, 0.3);
+  /* 标识符 */
+  color: rebeccapurple;
+  /* calc() 函数 */
+  width: calc(20% + 100px);
+
+  /* <image> */
+  /* background-image: url(...); */
+}
+
+/*
+  <position> 数据类型表示一组 2D 坐标，用于定位一个元素
+  它可以使用关键字 (如 top, left, bottom, right, 以及center）将元素与 2D 框的特定边界对齐，以及表示框的顶部和左侧边缘偏移量的长度
+  第一个值水平地设置位置，第二个值垂直地设置位置。如果只指定一个轴的值，另一个轴将默认为 center
+*/

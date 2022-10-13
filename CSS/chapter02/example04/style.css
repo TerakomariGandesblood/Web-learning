@@ -1,0 +1,71 @@
+.box {
+  background-color: #567895;
+}
+
+.box h2 {
+  background-color: black;
+  color: white;
+}
+span {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.a {
+  width: 200px;
+  height: 200px;
+  border: 5px solid black;
+  /* 平铺填充 */
+  background-image: url(bgtile.png);
+  /* 控制平铺的行为 */
+  background-repeat: repeat-x;
+}
+
+.b {
+  width: 400px;
+  height: 400px;
+  border: 5px solid black;
+  /* 不会缩小，只能看到一角 */
+  background-image: url(emoji.png);
+  /* 控制图像的大小 */
+  /* cover：浏览器将使图像足够大，使它完全覆盖了盒子区，同时仍然保持其高宽比。在这种情况下，有些图像可能会跳出盒子外 */
+  /* contain — 浏览器将使图像的大小适合盒子内。在这种情况下，如果图像的长宽比与盒子的长宽比不同，则可能在图像的任何一边或顶部和底部出现间隙 */
+  background-size: cover;
+  /* 图片宽度相对于盒子的宽度，高度 auto */
+  background-size: 30%;
+  background-repeat: no-repeat;
+  /* 盒子左上角是 (0,0)，为默认位置 */
+  /* 水平垂直 */
+  background-position: 120px 1em;
+}
+
+/* NOTE 渐变背景：https://developer.mozilla.org/zh-CN/docs/Web/CSS/gradient */
+/* 渐变生成器：https://cssgradient.io */
+
+.c {
+  width: 400px;
+  height: 400px;
+  border: 5px solid black;
+  /* 第一个图片在上面 */
+  background-image: url(emoji.png), url(bgtile.png);
+  /* 一一对应 */
+  background-repeat: repeat, repeat-x;
+  /* 该属性决定背景图像的位置是在视口内固定，或者随着包含它的区块滚动 */
+  background-attachment: local;
+  margin-top: 50px;
+  /* 圆角 */
+  border-radius: 10px;
+  border-top-right-radius: 10% 30%;
+  margin-bottom: 100px;
+}
+
+.box2 {
+  border: 5px solid black;
+  background-image: url(bgtile.png);
+  background-size: cover;
+  border-radius: 10px;
+}
+
+.box2 h2 {
+  background-color: black;
+  color: white;
+}

@@ -1,0 +1,22 @@
+/* 溢出 */
+
+.box {
+  border: 1px solid #333333;
+  width: 200px;
+  height: 100px;
+  /* 在内容溢出时隐藏，默认为显示 */
+  overflow: hidden;
+  /* 溢出时可滚动 */
+  overflow: scroll;
+}
+
+.word {
+  margin-top: 100px;
+  border: 1px solid #333333;
+  width: 100px;
+  font-size: 250%;
+  overflow-x: scroll;
+}
+
+/* NOTE 溢出建立了块级排版上下文（Block Formatting Context，BFC） */
+/* NOTE 网页设计时不需要的溢出，现代网页布局的方式可以很好的处理 */

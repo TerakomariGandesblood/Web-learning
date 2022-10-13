@@ -1,0 +1,99 @@
+.box {
+  width: 200px;
+  height: 200px;
+  border: 5px solid black;
+  margin-top: 50px;
+}
+
+img {
+  height: 100%;
+  width: 100%;
+}
+
+/* 使用 object-fit 时，替换元素可以以多种方式被调整到合乎盒子的大小 */
+.cover {
+  /* 缩小图像，同时维持了图像的原始比例 */
+  object-fit: cover;
+}
+
+.contain {
+  /* 缩放到足以完整地放到盒子里面的大小，可能会有空隙 */
+  object-fit: contain;
+}
+
+.fill {
+  /* 充满，不会维持比例 */
+  object-fit: fill;
+}
+
+/* 默认情况下元素会被拉伸到充满整块区域。但是图像不会被拉伸，而会对齐到网格区域或者弹性容器的起始处 */
+.wrapper2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 200px 200px;
+  gap: 20px;
+}
+
+.wrapper2 > div {
+  background-color: rebeccapurple;
+  border-radius: 0.5em;
+}
+
+/* 强制图像拉伸 */
+.wrapper2 img {
+  width: 100%;
+  height: 100%;
+}
+
+input[type="text"],
+input[type="email"] {
+  border: 2px solid #000;
+  margin: 0 0 1em 0;
+  padding: 10px;
+  width: 100%;
+}
+
+input[type="submit"] {
+  border: 3px solid #333;
+  background-color: #999;
+  border-radius: 5px;
+  padding: 10px 2em;
+  font-weight: bold;
+  color: #fff;
+}
+
+input[type="submit"]:hover {
+  background-color: #333;
+}
+
+button,
+input,
+select,
+textarea {
+  /* 在一些浏览器中，表单元素默认不会继承字体样式 */
+  font-family: inherit;
+  font-size: 100%;
+  /* 跨浏览器的 form 元素对于不同的挂件使用不同的盒子约束规则 */
+  box-sizing: content-box;
+  /* 为了保证统一，最好将所有元素的内外边距都设为 0，然后在单独进行样式化控制的时候将这些加回来。 */
+  padding: 0;
+  margin: 0;
+}
+
+textarea {
+  /* 避免 IE 在不需要滚动条的时候显示滚动条 */
+  overflow: auto;
+}
+
+p {
+  font-size: 100px;
+}
+
+p {
+  color: red;
+}
+
+/*
+  NOTE 通用样式表：它确保了跨浏览器的任何事情都被默认设定为统一样式
+  http://necolas.github.io/normalize.css/
+*/

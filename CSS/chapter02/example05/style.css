@@ -1,0 +1,4 @@
+h1 {
+  /* NOTE 书写模式：https://developer.mozilla.org/zh-CN/docs/Learn/CSS/Building_blocks/Handling_different_text_directions */
+  writing-mode: vertical-rl;
+}

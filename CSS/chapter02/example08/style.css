@@ -1,0 +1,30 @@
+/* 元素的高度由其所含内容高度确定 */
+.box {
+  border: 5px solid darkblue;
+  /* 设置外部尺寸 */
+  height: 150px;
+  width: 200px;
+}
+
+.box2 {
+  border: 5px solid darkblue;
+  width: 300px;
+  /* 使用百分比作为元素外边距（margin）或填充（padding）的单位时，值是以包含块的内联尺寸进行计算的，也就是元素的水平宽度 */
+  margin: 10%;
+  padding: 10%;
+}
+
+.box3 {
+  border: 5px solid darkblue;
+  /* 最小高度，但是有更多的内容，那么盒子将会变大 */
+  min-height: 100px;
+  width: 200px;
+  margin-bottom: 100px;
+}
+
+.box4 {
+  border: 5px solid darkblue;
+  width: 20vw;
+  height: 20vh;
+  font-size: 10vh;
+}

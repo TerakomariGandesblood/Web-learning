@@ -1,0 +1,80 @@
+body {
+  color: green;
+}
+/* 一些设置在父元素上的 CSS 属性可以被子元素继承，比如 color，而 width 不会被继承 */
+span {
+  color: black;
+}
+
+.main {
+  color: rebeccapurple;
+  border: 2px solid #ccc;
+  padding: 1em;
+}
+
+.special {
+  color: black;
+  font-weight: bold;
+}
+
+/* 使子元素属性和父元素相同 */
+.my-class-1 a {
+  color: inherit;
+}
+
+/* 属性值设置为该属性的初始值 */
+.my-class-2 a {
+  color: initial;
+}
+
+/* 属性值重置为浏览器的默认样式 */
+.my-class-3 a {
+  color: revert;
+}
+
+/* NOTE revert-layer：目前只有 Firefox 支持 https://developer.mozilla.org/en-US/docs/Web/CSS/revert-layer */
+
+/* 如果这个属性可以继承，且父级有定义，则将该属性重新设置为继承的值；如果没有，则将该属性重新设置为初始值 */
+.my-class-4 a {
+  color: unset;
+}
+
+a {
+  color: red;
+}
+
+/* NOTE Safari 默认样式：https://github.com/WebKit/WebKit/blob/main/Source/WebCore/css/html.css */
+
+blockquote {
+  background-color: red;
+  border: 2px solid green;
+}
+
+/* all：除了 unicode-bidi 与 direction 之外的所有属性 */
+.fix-this {
+  all: unset;
+}
+
+/* NOTE 一种常见的做法是给基本元素定义通用样式，然后给不同的元素创建对应的类 */
+
+/* 计算优先级 */
+/*
+  ID：选择器中包含 ID 选择器则百位得一分
+  类：选择器中包含类选择器、属性选择器或者伪类则十位得一分
+  元素：选择器中包含元素、伪元素选择器则个位得一分
+  否定（:not()）和任意匹配（:is()）伪类本身对优先级没有影响，但它们的参数则会带来影响。参数中，对优先级算法有贡献的参数的优先级的最大值将作为该伪类选择器的优先级
+  高位相同才比较低位
+  优先级相同则后面的覆盖前面的
+  内联样式优先级最高
+*/
+
+/* NOTE !important 用于修改特定属性的值，能够覆盖普通规则的层叠，不建议使用 */
+
+/*
+  相互冲突的声明将按以下顺序应用，后一种声明将覆盖前一种声明：
+  用户代理样式表中的声明（例如，浏览器的默认样式，在没有设置其他样式时使用）
+  用户样式表中的常规声明（由用户设置的自定义样式）
+  作者样式表中的常规声明（这些是我们 web 开发人员设置的样式）
+*/
+
+/* NOTE 级联层，一个实验中的功能：https://developer.mozilla.org/zh-CN/docs/Web/CSS/@layer */
