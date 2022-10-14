@@ -1,0 +1,120 @@
+/* General setup */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0 auto;
+  min-width: 1000px;
+  max-width: 1400px;
+}
+
+/* Layout */
+
+section {
+  float: left;
+  width: 50%;
+}
+
+aside {
+  float: left;
+  width: 30%;
+}
+
+nav {
+  float: left;
+  width: 20%;
+}
+
+footer {
+  clear: both;
+}
+
+header,
+section,
+aside,
+nav,
+footer {
+  padding: 20px;
+}
+
+/* header and footer */
+
+header,
+footer {
+  border-top: 5px solid #a66;
+  border-bottom: 5px solid #a66;
+}
+
+/* WRITE YOUR CODE BELOW HERE */
+@font-face {
+  font-family: "lovatolight";
+
+  src: url("fonts/Lovato-Light-webfont.woff2") format("woff2"),
+    url("fonts/Lovato-Light-webfont.woff") format("woff"),
+    url("fonts/Lovato-Light-webfont.ttf") format("truetype");
+
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "josefin_slabbold";
+  src: url("fonts/josefinslab-bold-webfont.woff2") format("woff2"),
+    url("fonts/josefinslab-bold-webfont.woff") format("woff"),
+    url("fonts/josefinslab-bold-webfont.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+html {
+  font-family: "lovatolight", serif;
+  font-size: 10px;
+}
+
+header {
+  font-family: "josefin_slabbold", sans-serif;
+}
+
+h1 {
+  font-size: 4rem;
+  text-align: center;
+  letter-spacing: 0.2rem;
+}
+
+p,
+li {
+  font-size: 1.5rem;
+  line-height: 1.5;
+  letter-spacing: 0.1rem;
+}
+
+/* 紧邻兄弟组合器，匹配所有紧邻在 <h2> 元素后的 <p> 元素 */
+section h2 + p {
+  /* 缩进 */
+  text-indent: 20px;
+}
+
+a:link {
+  color: #a66;
+}
+
+a:visited {
+  color: #a66;
+}
+
+a:focus {
+  border-bottom: 1px solid;
+  background: #bae498;
+}
+
+a:hover {
+  border-bottom: 1px solid;
+  background: #cdfeaa;
+}
+
+a:active {
+  background: #265301;
+  color: #cdfeaa;
+}

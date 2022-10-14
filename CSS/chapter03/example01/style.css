@@ -1,0 +1,73 @@
+p {
+  color: red;
+  /* 浏览器只会把在当前机器上可用的字体应用到当前正在访问的网站上；
+     如果字体不可用，那么就会用默认字体代替 */
+  /* NOTE 只有某几个字体通常可以应用到所有系统，因此可以毫无顾忌地使用。这些都是所谓的网页安全字体
+     网页安全字体的列表：https://www.cssfontstack.com */
+  font-family: arial;
+  /* 默认字体：CSS 定义了 5 个常用的字体名称：serif（有衬线的字体）、sans-serif（无衬线的字体）、monospace（等宽字体）
+     cursive（模拟笔迹的字体）和 fantasy（用来装饰的字体）
+     当使用这些通用名称时，使用的字体完全取决于每个浏览器和操作系统 */
+
+  /* 字体栈 (font stack) ，让浏览器有多种选择 */
+  /* 有一些字体名称不止一个单词，那么就需要用引号包裹 */
+  font-family: "Trebuchet MS", Verdana, sans-serif;
+}
+
+/* 当调整文本大小时，将基础 font-size 设置为 10px 往往是个不错的主意，这样之后的计算会变得简单 */
+html {
+  font-size: 10px;
+}
+
+h1 {
+  font-size: 2.6rem;
+}
+
+p {
+  font-size: 1.4rem;
+  color: red;
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+p {
+  /* 设置斜体，normal：设置为普通字体
+     italic：如果字体的斜体版本可用，则使用，如不可用，使用 oblique 模拟
+     oblique：将普通文本倾斜的样式应用到文本中 */
+  font-style: normal;
+  /* 设置粗体 */
+  font-weight: bold;
+  /* 转换， uppercase：全部大写 */
+  text-transform: uppercase;
+  /* 设置文本装饰， underline：下划线 */
+  text-decoration: underline;
+}
+
+html {
+  font-size: 10px;
+}
+
+h1 {
+  font-size: 2.6rem;
+  /* 首字母大写 */
+  text-transform: capitalize;
+  /* 文字阴影 */
+  text-shadow: 4px 4px 5px red;
+  /* 行内内容（例如文字）如何相对它的块父元素对齐 */
+  text-align: center;
+  /* 行高，1.5 * font-size */
+  line-height: 1.5;
+}
+
+h1 + p {
+  font-weight: bold;
+}
+
+p {
+  /* 字母间距 */
+  letter-spacing: 2px;
+  /* 单词间距 */
+  word-spacing: 10px;
+  font-size: 1.4rem;
+  color: red;
+  font-family: Helvetica, Arial, sans-serif;
+}

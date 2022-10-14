@@ -1,0 +1,38 @@
+body,
+html {
+  margin: 0;
+  font-family: sans-serif;
+}
+
+.container {
+  /* 弹性盒子布局 */
+  display: flex;
+  /* 间距 */
+  gap: 0.625%;
+}
+
+a {
+  /* 弹性项目如何增大或缩小以适应其弹性容器中可用的空间 */
+  /* 分配相同的大小 */
+  flex: 1;
+  text-decoration: none;
+  outline: none;
+  text-align: center;
+  line-height: 3;
+  color: black;
+}
+
+a:link,
+a:visited,
+a:focus {
+  background: yellow;
+}
+
+a:hover {
+  background: orange;
+}
+
+a:active {
+  background: red;
+  color: white;
+}

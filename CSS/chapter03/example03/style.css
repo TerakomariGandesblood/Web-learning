@@ -1,0 +1,54 @@
+body {
+  width: 300px;
+  margin: 0 auto;
+  font-size: 1.2rem;
+  font-family: sans-serif;
+}
+
+p {
+  line-height: 1.4;
+}
+
+a {
+  /* 轮廓，不占据空间，绘制于元素内容周围，通常是矩形 */
+  outline: none;
+  text-decoration: none;
+  padding: 2px 1px 0;
+}
+
+/* 要按照顺序，否则可能不会产生正确的效果 */
+/* 一个链接被激活 (activated) 的时候，它也是处于悬停 (hover) 状态的 */
+/* 未访问的 */
+a:link {
+  color: #265301;
+}
+
+/* 访问过的 */
+a:visited {
+  color: #437a16;
+}
+
+/* 选中，如使用 tab */
+a:focus {
+  border-bottom: 1px solid;
+  background: #bae498;
+}
+
+/* 悬停 */
+a:hover {
+  border-bottom: 1px solid;
+  background: #cdfeaa;
+}
+
+/* 激活，如使用鼠标点击 */
+a:active {
+  background: #265301;
+  color: #cdfeaa;
+}
+
+/* 存在 href 属性并且属性值包含“http”的 <a> 元素 */
+a[href*="http"] {
+  background: url("external-link.png") no-repeat 100% 0;
+  background-size: 16px 16px;
+  padding-right: 19px;
+}
