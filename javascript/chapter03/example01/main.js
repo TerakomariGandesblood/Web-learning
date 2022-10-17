@@ -22,7 +22,7 @@ let person = {
         this.interests[0] +
         " and " +
         this.interests[1] +
-        "."
+        ".",
     );
   },
   greeting: function () {
