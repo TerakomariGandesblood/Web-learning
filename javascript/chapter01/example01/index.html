@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <!--async 告知浏览器在遇到 <script> 元素时不要中断后续 HTML 内容的加载-->
+    <!--而 defer 通知浏览器该脚本将在文档完成解析后，触发 DOMContentLoaded 事件前执行-->
+    <!--两者都不会阻塞，使用 async 那么脚本执行测序无法保证，与 DOMContentLoaded 也无关-->
+    <!--defer 可以确保脚本的执行顺序-->
+    <script src="main.js" defer></script>
+    <title>example01</title>
+  </head>
+  <body>
+    <button>点我呀</button>
+  </body>
+</html>
