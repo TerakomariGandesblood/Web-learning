@@ -17,7 +17,7 @@ let person = {
         " " +
         this.name[1] +
         " is " +
-        this.age +
+        age +
         " years old. He likes " +
         this.interests[0] +
         " and " +
