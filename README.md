@@ -25,7 +25,7 @@ Web learning notes
 ## Tools
 
 - [cz-cli](https://github.com/commitizen/cz-cli)
-- [yarn](https://github.com/yarnpkg/berry)
+- [pnpm](https://github.com/pnpm/pnpm)
 - [husky](https://github.com/typicode/husky)
 - [actionlint](https://github.com/rhysd/actionlint)
 - [gitleaks](https://github.com/zricethezav/gitleaks)
