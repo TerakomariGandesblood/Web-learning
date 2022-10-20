@@ -33,7 +33,10 @@ Web learning notes
 - [commitlint](https://github.com/conventional-changelog/commitlint)
 - [stylelint](https://github.com/stylelint/stylelint)
 - [eslint](https://github.com/eslint/eslint)
+- [hint](https://github.com/webhintio/hint)
 - [prettier](https://github.com/prettier/prettier)
+- [codeclimate](https://github.com/codeclimate/codeclimate)
+- [webhint-extension](https://webhint.io/docs/user-guide/extensions/extension-browser/)
 
 ## Libraries
 
@@ -43,3 +46,4 @@ Web learning notes
 - [tailwindcss](https://tailwindcss.com/docs/installation)
 - [node](https://nodejs.dev/en/learn/)
 - [next.js](https://nextjs.org/docs/getting-started)
+- [jest](https://jestjs.io/zh-Hans/)

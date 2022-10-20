@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>example05</title>
+
+    <style>
+      textarea {
+        /* 控制缩放 */
+        resize: both;
+      }
+    </style>
+  </head>
+  <body>
+    <form>
+      <!--多行文本，浏览器默认会提供拖动手柄，你以通过拖拽来放大或缩小文本区的大小-->
+      <!--wrap 属性指定如何控制文本换行，默认是 soft-->
+      <!--soft 意味着提交的文字没有换行，而浏览器中渲染的文字有换行；
+      hard（使用此属性必须指定 cols 的值），意味着提交的文字和浏览器中渲染的文字都有换行；
+      off，停止任何换行行为-->
+      <textarea cols="30" rows="10" wrap="soft"></textarea>
+
+      <!--选择框，允许选择多个值-->
+      <select multiple>
+        <!--如果一个 <option> 元素明确设置了 value 属性，当表单提交时也会提交那个选项对应的值。如果省略了 value 属性，<option> 元素的内容会作为提交的值-->
+        <option value="123">123</option>
+        <option value="321" selected>321</option>
+
+        <!--label 属性的值在嵌套选项之前显示-->
+        <optgroup label="group">
+          <option value="222">222</option>
+          <option value="333">333</option>
+        </optgroup>
+      </select>
+
+      <!--自动补全-->
+      <!--list 属性和 <datalist> 元素可以与任何需要用户输入的组件配合使用，但是不同浏览器表现可能不同-->
+      <label for="fruit">What's your favorite fruit?</label>
+      <input type="text" name="fruit" id="fruit" list="suggestion" />
+      <datalist id="suggestion">
+        <option>Apple</option>
+        <option>Banana</option>
+        <option>Blackberry</option>
+        <option>Blueberry</option>
+        <option>Lemon</option>
+        <option>Lychee</option>
+        <option>Peach</option>
+        <option>Pear</option>
+      </datalist>
+
+      <!--进度条-->
+      <!--NOTE 内容是供不支持此元素浏览器进行回退，以及给屏幕阅读器提供发音材料的机制-->
+      <progress max="100" value="75">75/100</progress>
+
+      <!--计量器-->
+      <!--分为 [min, low]、(low, high)、[high, max] 三部分-->
+      <!--optimum 定义了该计量器的最佳值-->
+      <!--如果 optimum 在下半部分范围内，下半部分范围被认为是首选部分，中间部分范围被认为是平均部分，而上半部分范围被认为是最差的部分
+          如果 optimum 在中间部分范围内，下半部分范围被认为是平均部分，中间部分范围被认为是首选部分，而上半部分范围也被认为是平均部分
+          如果 optimum 在上半部分范围内，下半部分范围被认为是最差的部分，中间部分范围被认为是平均部分，而上半部分范围被认为是首选部分-->
+      <!--如果当前值位于首选范围，则计量器显示为绿色
+          如果当前值位于平均范围，则计量器显示为黄色
+          如果当前值位于最差范围，则计量器显示为红色-->
+      <!--NOTE 内容是供不支持此元素浏览器进行回退，以及给屏幕阅读器提供发音材料的机制-->
+      <meter min="0" max="100" value="75" low="33" high="66" optimum="80">
+        75
+      </meter>
+    </form>
+  </body>
+</html>

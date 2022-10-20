@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <script src="main.js" defer></script>
+
+    <title>example10</title>
+  </head>
+  <body>
+    <!--相对 URL：数据被发送到服务器上的不同 URL-->
+    <!--NOTE 如果表单是在安全页面上托管的，但是指定了一个不安全的 HTTP URL，它带有action属性，
+      浏览器会在每次尝试发送数据时向用户显示一个安全警告，因为数据不会被加密-->
+    <form action="/somewhere_else"></form>
+    <!--没有 action 属性：发送到表单出现的相同页面上-->
+    <form></form>
+
+    <!--默认是 application/x-www-form-urlencoded-->
+    <!--发送文件，数据将被分成多个部分-->
+    <!--NOTE 为了防止滥用，许多服务器配置了文件和 HTTP 请求的大小限制-->
+    <form method="post" enctype="multipart/form-data">
+      <div>
+        <label for="file">Choose a file</label>
+        <input type="file" id="file" name="myFile" />
+      </div>
+      <div>
+        <button>Send the file</button>
+      </div>
+    </form>
+  </body>
+</html>

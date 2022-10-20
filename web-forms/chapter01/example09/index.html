@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <script src="main.js" defer></script>
+
+    <title>example09</title>
+  </head>
+  <body>
+    <!--永远不要相信从客户端传递到服务器的数据。即使表单正确验证并防止输入格式错误，恶意用户仍然可以更改网络请求-->
+    <!--客户端校验（HTML5 内置校验、JavaScript 校验）、服务器端校验-->
+    <!--如果一个元素未校验通过，用户尝试提交表单，浏览器会展示出错误消息，并停止表单的提交-->
+    <form>
+      <label for="choose">Would you prefer a banana or a cherry?</label>
+      <!--required：必须填写-->
+      <!--pattern：正则表达式匹配-->
+      <input
+        type="text"
+        id="choose"
+        name="i_like"
+        required
+        pattern="banana|cherry"
+      />
+      <button type="submit">Submit</button>
+    </form>
+
+    <!--novalidate 属性关闭浏览器的自动校验-->
+    <form novalidate class="validate">
+      <p>
+        <label for="mail">
+          Please enter an email address:
+          <!--aria-live 属性确保我们的自定义错误信息将呈现给所有人，包括使用屏幕阅读器等辅助技术的人-->
+          <!--任何对用户来说很重要但又不至于令人讨厌的更新的区域都应该被设置此属性。每当用户空闲时，屏幕阅读器都会说出更改-->
+          <span class="error" aria-live="polite"></span>
+        </label>
+        <input type="email" id="mail" name="mail" />
+      </p>
+      <button>Submit</button>
+    </form>
+  </body>
+</html>

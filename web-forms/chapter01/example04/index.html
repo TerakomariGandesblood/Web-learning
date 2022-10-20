@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <script src="main.js" defer></script>
+
+    <title>example04</title>
+  </head>
+  <body>
+    <form>
+      <!--会检查输入的电子邮件的格式。multiple 允许输入多个，以英文逗号分割-->
+      <!--NOTE 在某些设备上可能会出现一个包括 @ 键的更适合于输入电子邮件地址的虚拟键盘-->
+      <!--NOTE 它不应该被认为是一种详尽的安全措施，因为客户端验证太容易被关闭了-->
+      <input type="email" multiple />
+      <!--搜索框-->
+      <!--text 字段和 search 字段的主要区别是浏览器赋予它们的外观显示-->
+      <!--NOTE 通常情况下，search 字段拥有圆角边框，有时会显示“Ⓧ”标志，当点击它时会清除输入框。另外，在动态键盘设备上，键盘的回车键会显示“search”，或显示为放大镜图标-->
+      <!--NOTE search 字段的值可以自动地保存下来，在同一网站的自动完成框中复用输入-->
+      <input type="search" />
+      <!--电话号码，注意对用户输入的值没有任何限制-->
+      <!--NOTE 当使用带有动态键盘的移动设备访问带有 type="tel" 的表单时，大多数设备会显示数字键盘-->
+      <input type="tel" />
+      <!--网址，没有协议（例如 http:）输入或网址格式不对的情况下报告错误-->
+      <!--NOTE 在具有动态键盘的设备上，键盘通常会显示部分或全部冒号、句号和正斜杠作为默认键-->
+      <input type="url" />
+      <!--数字，并设置最大最小值，每次增加 2-->
+      <!--只允许浮点数输入，并通常以旋转器（spinner）的形式提供按钮来增加和减少控件的值-->
+      <!--NOTE 在有动态键盘的设备上，一般会显示数字键盘-->
+      <input type="number" min="10" max="20" step="2" />
+
+      <!--滑块-->
+      <label for="price">Choose a maximum house price: </label>
+      <input
+        type="range"
+        name="price"
+        id="price"
+        min="50000"
+        max="500000"
+        step="100"
+        value="250000"
+      />
+      <output class="price-output" for="price"></output>
+
+      <!--没有特定时区信息的日期和时间的控件-->
+      <input type="datetime-local" />
+      <!--带有年份信息的某个月的控件-->
+      <input type="month" />
+      <!--选择时间-->
+      <input type="time" />
+      <!--选择一年中特定编号周-->
+      <input type="week" />
+      <!--选择日期，可以限制日期值-->
+      <input type="date" min="2013-06-01" max="2013-08-31" step="7" />
+
+      <!--颜色选择器-->
+      <input type="color" />
+    </form>
+  </body>
+</html>

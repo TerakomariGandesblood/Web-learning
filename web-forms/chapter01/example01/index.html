@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="style.css" type="text/css" />
+
+    <title>example01</title>
+  </head>
+  <body>
+    <!--所有表单都以 <form> 元素开始-->
+    <!--action 属性定义了在提交表单时，应该把所收集的数据送给谁（URL）去处理-->
+    <!--method 属性定义了发送数据的 HTTP 方法（通常是 get 或 post）-->
+    <form action="/my-handling-form-page" method="post">
+      <ul>
+        <li>
+          <!--for 的值对应表单控件的 id，这允许用户单击标签以激活相应的表单控件，有助于使用屏幕阅读器的用户读取名称-->
+          <label for="name">Name:</label>
+          <!--name 属性在浏览器端，它告诉浏览器给每个数据的名称，在服务器端，它允许服务器按名称处理每个数据块。表单数据以名称/值对的形式发送到服务器-->
+          <input type="text" name="user_name" id="name" value="default value" />
+        </li>
+        <li>
+          <label for="mail">E-mail:</label>
+          <!--只接受格式正确的电子邮件地址，会进行一些检查-->
+          <input type="email" name="user_email" id="mail" />
+        </li>
+        <li>
+          <label for="msg">Message:</label>
+          <textarea name="user_message" id="msg">default value</textarea>
+        </li>
+        <li>
+          <!--单击 type="submit"（默认）的 button 会发送表单的数据到 <form> 元素的 action 属性所定义的网页-->
+          <!--单击 type="reset" 的 button 会将所有表单小部件重新设置为它们的默认值，从用户体验的角度来看，这被认为是一种糟糕的做法-->
+          <!--单击 type="button" 的 button 不会发生任何事-->
+          <!--input 也可以使用相同的 type 值，它们之间的主要区别在于 <button> 元素更易于设置样式-->
+          <button type="submit">Send your message</button>
+        </li>
+      </ul>
+    </form>
+  </body>
+</html>

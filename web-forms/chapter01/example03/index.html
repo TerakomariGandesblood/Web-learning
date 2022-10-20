@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>example03</title>
+  </head>
+  <body>
+    <!--NOTE 表单提交，大部分具有 name 属性的小部件都会被发送，即使没有任何值被填。
+      但是对于可选中项，只有在勾选时才发送它们的值，在它们被勾选且没有提供值（value）时，将会发送名字和缺省值 on-->
+    <form>
+      <!--单行文本框，type="text" 是默认值，指定的 type 不支持也会回落到 text-->
+      <!--如果输入带有换行符的文本，浏览器会在发送数据之前删除这些换行符-->
+      <!--readonly：用户不能修改输入值-->
+      <!--value：元素的初始值-->
+      <input type="text" readonly value="默认值" />
+      <!--用户不能与元素交互，输入值不会与表单数据的其余部分一起发送-->
+      <input type="text" disabled />
+      <!--文本输入框中出现的文本，用来简略描述输入框的目的-->
+      <input type="text" placeholder="描述" />
+      <!--size：框的大小（字符数），maxlength：最大字符数-->
+      <input type="text" size="20" maxlength="5" />
+      <!--拼写检查-->
+      <input type="text" spellcheck="true" />
+
+      <!--密码框-->
+      <input type="password" />
+      <!--对用户不可见，但发送表单时会和其他表单数据一起发送，不应该有 label-->
+      <input type="hidden" />
+      <!--复选框，默认为选中，相关的复选框元素应该使用具有相同值的 name 属性-->
+      <!--autofocus 加载时元素自动具有输入焦点-->
+      <input type="checkbox" checked autofocus />
+      <!--单选按钮，同一组（name 相同）中只有一个按钮可以同时被选中，没有任何一个选中，不会发送任何值-->
+      <input type="radio" />
+
+      <!--图像按钮，在用户点击它时，图像按钮的行为与提交（submit）按钮相同-->
+      <!--支持和 <img> 相同的属性-->
+      <!--提交表单时，不会提交它的值，而是提交在图像上单击处的 X 和 Y 坐标（坐标是相对于图像的，这意味着图像的左上角表示坐标 (0, 0)）-->
+      <!--例如 pos.x=11&pos.y=13-->
+      <input type="image" src="star.png" alt="A star" name="pos" />
+
+      <!--文件选择器，图像文件，允许用户选择多个文件-->
+      <!--NOTE 在一些移动终端上，文件选择器可以访问由设备相机和麦克风直接获取的图片、视频、音频，只需要设置 设置 accept 属性-->
+      <input type="file" accept="image/*;capture=camera" multiple />
+    </form>
+  </body>
+</html>

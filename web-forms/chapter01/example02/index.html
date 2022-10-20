@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="style.css" type="text/css" />
+
+    <title>Payment form</title>
+  </head>
+  <body>
+    <form>
+      <h1>Payment form</h1>
+      <p>
+        Required fields are followed by
+        <strong><abbr title="required">*</abbr></strong
+        >.
+      </p>
+
+      <section>
+        <h2>Contact information</h2>
+
+        <!--一种方便的用于创建具有相同目的的小部件组的方式，当有一组按钮时，应该嵌套在该元素内。也可以用来分段-->
+        <fieldset>
+          <!--加上标签-->
+          <legend>Title</legend>
+
+          <ul>
+            <li>
+              <input type="radio" name="title" id="title_1" value="K" />
+              <label for="title_1">King</label>
+            </li>
+            <li>
+              <input type="radio" name="title" id="title_2" value="Q" />
+              <label for="title_2">Queen</label>
+            </li>
+            <li>
+              <input type="radio" name="title" id="title_3" value="J" />
+              <label for="title_3">Joker</label>
+            </li>
+          </ul>
+        </fieldset>
+
+        <fieldset>
+          <p>
+            <label for="name"
+              >Name: <strong><abbr title="required">*</abbr></strong></label
+            >
+            <input type="text" id="name" name="username" />
+          </p>
+          <p>
+            <label for="mail"
+              >E-mail: <strong><abbr title="required">*</abbr></strong></label
+            >
+            <input type="email" id="mail" name="usermail" />
+          </p>
+          <p>
+            <label for="pwd"
+              >Password: <strong><abbr title="required">*</abbr></strong></label
+            >
+            <input type="password" id="pwd" name="password" />
+          </p>
+        </fieldset>
+      </section>
+
+      <section>
+        <h2>Payment information</h2>
+
+        <p>
+          <label for="card"> Card type: </label>
+          <select id="card" name="usercard">
+            <option value="visa">Visa</option>
+            <option value="mc">Mastercard</option>
+            <option value="amex">American Express</option>
+          </select>
+        </p>
+        <p>
+          <label for="number"
+            >Card number:
+            <strong><abbr title="required">*</abbr></strong></label
+          >
+          <input type="number" name="cardnumber" id="number" />
+        </p>
+        <p>
+          <label for="date"
+            >Expiration date: <strong><abbr title="required">*</abbr></strong>
+            <em>formatted as mm/yy</em></label
+          >
+        </p>
+        <input type="date" id="date" name="expiration" />
+      </section>
+
+      <button type="submit">Validate the payment</button>
+    </form>
+  </body>
+</html>
