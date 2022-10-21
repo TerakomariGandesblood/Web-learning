@@ -14,7 +14,7 @@ Web learning notes
 
 ## Work
 
-- [Vue](https://v2.cn.vuejs.org/v2/guide/)
+- [Vue](https://cn.vuejs.org/guide/introduction.html)
 - [Vue router](https://v3.router.vuejs.org/zh/guide/)
 - [Vuex](https://v3.vuex.vuejs.org/zh/)
 - [Element](https://element.eleme.cn/#/zh-CN/component)
