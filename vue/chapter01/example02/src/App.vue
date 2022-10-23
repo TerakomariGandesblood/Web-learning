@@ -40,8 +40,9 @@ function onSubmit() {}
     <div :id="div_id"></div>
     <!--一次绑定多个 attributes-->
     <div v-bind="objectOfAttrs"></div>
-    <!--可以绑定 JavaScript 表达式-->
+    <!--可以绑定 JavaScript 表达式，在文本插值中-->
     <p>{{ div_id + 1 }}</p>
+    <!--在 Vue 指令 attrubute 的值中-->
     <div v-bind:id="div_id + 1"></div>
     <!--因为组件每次更新时都会调用，因此不应该产生任何副作用-->
     <p>{{ func() }}</p>

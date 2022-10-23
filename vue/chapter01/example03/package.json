@@ -8,8 +8,7 @@
     "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs --fix --ignore-path .gitignore"
   },
   "dependencies": {
-    "@vue/reactivity-transform": "^3.2.41",
-    "vue": "^2.7.7"
+    "vue": "^2.7.13"
   },
   "devDependencies": {
     "@rushstack/eslint-patch": "^1.2.0",
