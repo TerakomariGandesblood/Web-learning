@@ -15,6 +15,7 @@ Web learning notes
 
 - [Vue](https://cn.vuejs.org/guide/introduction.html)
 - [create-vue](https://github.com/vuejs/create-vue)
+- [Vue CLI](https://github.com/vuejs/vue-cli)
 - [vue-devtools](https://github.com/vuejs/devtools)
 - [Vue router](https://router.vuejs.org/zh/guide/)
 - [Vuex](https://vuex.vuejs.org/zh/)
@@ -26,7 +27,7 @@ Web learning notes
 
 ## Personal
 
-- [MDN Web Docs](https://github.com/mdn/content)
+- [JavaScript](https://github.com/javascript-tutorial/zh.javascript.info)
 - [pnpm](https://github.com/pnpm/pnpm)
 - [Vite](https://github.com/vitejs/vite)
 - [vite-plugin-html](https://github.com/vbenjs/vite-plugin-html)
@@ -37,16 +38,22 @@ Web learning notes
 - [TypeScript](https://github.com/microsoft/TypeScript)
 - [React](https://github.com/facebook/react)
 - [react-use](https://github.com/streamich/react-use)
-- [MUI Core](https://github.com/mui/material-ui)
-- [React Hook Form](https://github.com/react-hook-form/react-hook-form)
-- [Tailwind CSS](https://github.com/tailwindlabs/tailwindcss)
+- [Chakra UI](https://github.com/chakra-ui/chakra-ui)
 - [react-spring](https://github.com/pmndrs/react-spring)
+- [React Hook Form](https://github.com/react-hook-form/react-hook-form)
+- [Yup](https://github.com/jquense/yup)
 - [Next.js](https://github.com/vercel/next.js)
 - [Jotai](https://github.com/pmndrs/jotai)
 - [SWR](https://github.com/vercel/swr)
+- [Node.js](https://github.com/nodejs/nodejs.dev)
+
+## Test
+
 - [Jest](https://github.com/facebook/jest)
 - [React Testing Library](https://github.com/testing-library/react-testing-library)
-- [Node.js](https://nodejs.dev/en/learn)
+- [Mock Service Worker](https://github.com/mswjs/msw)
+- [Storybook](https://github.com/storybookjs/storybook)
+- [Playwright](https://github.com/microsoft/playwright)
 
 ## Lint
 
