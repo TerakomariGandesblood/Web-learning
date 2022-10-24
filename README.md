@@ -34,6 +34,7 @@ Web learning notes
 - [Browserslist](https://github.com/browserslist/browserslist)
 - [axios](https://github.com/axios/axios)
 - [date-fns](https://github.com/date-fns/date-fns)
+- [Video.js](https://github.com/videojs/video.js)
 - [Dexie.js](https://github.com/dexie/Dexie.js)
 - [TypeScript](https://github.com/microsoft/TypeScript)
 - [SWC](https://github.com/swc-project/swc)
