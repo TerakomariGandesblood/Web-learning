@@ -1,11 +1,12 @@
 import Vue from "vue";
 import App from "./App.vue";
 
-import Button from "element-ui/lib/button";
+import router from "./router";
+
+import "./assets/base.css";
 import "element-ui/lib/theme-chalk/index.css";
 
-Vue.use(Button);
-
 new Vue({
+  router,
   render: (h) => h(App),
 }).$mount("#app");

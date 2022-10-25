@@ -10,7 +10,8 @@
   },
   "dependencies": {
     "element-ui": "^2.15.10",
-    "vue": "^2.7.13"
+    "vue": "^2.7.13",
+    "vue-router": "^3.6.5"
   },
   "devDependencies": {
     "@rushstack/eslint-patch": "^1.2.0",
