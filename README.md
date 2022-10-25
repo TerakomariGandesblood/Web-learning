@@ -47,7 +47,7 @@ Web learning notes
 - [Next.js](https://github.com/vercel/next.js)
 - [Jotai](https://github.com/pmndrs/jotai)
 - [SWR](https://github.com/vercel/swr)
-- [Node.js](https://github.com/nodejs/nodejs.dev)
+- [Node.js](https://nodejs.dev/en/learn/)
 
 ## Test
 
