@@ -1,5 +1,5 @@
 {
-  "name": "example09",
+  "name": "vue-router",
   "version": "0.1.0",
   "packageManager": "pnpm@7.14.0",
   "scripts": {
@@ -9,7 +9,8 @@
     "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs --fix --ignore-path .gitignore"
   },
   "dependencies": {
-    "vue": "^2.7.13"
+    "vue": "^2.7.13",
+    "vue-router": "^3.6.5"
   },
   "devDependencies": {
     "@rushstack/eslint-patch": "^1.2.0",

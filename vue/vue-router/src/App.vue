@@ -12,7 +12,10 @@ import { RouterLink, RouterView } from "vue-router";
     <p>
       <!-- 使用 router-link 组件进行导航 -->
       <router-link to="/">Go to Home</router-link>
+      <br />
       <router-link to="/about">Go to About</router-link>
+      <br />
+      <router-link to="/user/123">Go to User</router-link>
     </p>
 
     <!-- 路由匹配到的组件将渲染在这里 -->

@@ -1,6 +1,7 @@
 {
-  "name": "example01",
+  "name": "example12",
   "version": "0.1.0",
+  "packageManager": "pnpm@7.14.0",
   "scripts": {
     "dev": "vite",
     "build": "vite build",

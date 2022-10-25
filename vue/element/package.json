@@ -1,5 +1,5 @@
 {
-  "name": "example09",
+  "name": "element",
   "version": "0.1.0",
   "packageManager": "pnpm@7.14.0",
   "scripts": {
@@ -9,6 +9,7 @@
     "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs --fix --ignore-path .gitignore"
   },
   "dependencies": {
+    "element-ui": "^2.15.10",
     "vue": "^2.7.13"
   },
   "devDependencies": {
@@ -21,6 +22,7 @@
     "prettier": "^2.7.1",
     "stylelint": "^14.14.0",
     "terser": "^5.15.1",
+    "unplugin-vue-components": "^0.22.9",
     "vite": "^3.1.8",
     "vite-plugin-html": "^3.2.0"
   }
