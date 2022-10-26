@@ -22,7 +22,6 @@ Web learning notes
 - [Element](https://element.eleme.cn/#/zh-CN/component)
 - [unplugin-vue-components](https://github.com/antfu/unplugin-vue-components)
 - [Database](http://www.cyc2018.xyz/数据库/)
-- [Java](http://www.cyc2018.xyz/Java/)
 - [Spring Boot](https://springdoc.cn/spring-boot/)
 
 ## Personal
