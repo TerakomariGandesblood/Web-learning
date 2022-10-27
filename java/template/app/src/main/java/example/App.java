@@ -2,11 +2,11 @@
 package example;
 
 public class App {
-  public String get_Greeting() {
+  public String getGreeting() {
     return "Hello World!";
   }
 
   public static void main(String[] args) throws Exception {
-    System.out.println(new App().get_Greeting());
+    System.out.println(new App().getGreeting());
   }
 }

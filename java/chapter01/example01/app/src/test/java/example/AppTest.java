@@ -9,6 +9,6 @@ class AppTest {
   @Test
   void test() {
     App classUnderTest = new App();
-    assertNotNull(classUnderTest.get_Greeting(), "app should have a greeting");
+    assertNotNull(classUnderTest.getGreeting(), "app should have a greeting");
   }
 }

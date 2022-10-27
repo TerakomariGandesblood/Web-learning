@@ -7,7 +7,7 @@ import java.util.Date;
 
 // 文件中必须存在一个与该文件同名的类
 public class App {
-  public String get_Greeting() {
+  public String getGreeting() {
     return "Hello World!";
   }
   // 入口方法
