@@ -47,6 +47,7 @@ Web learning notes
 - [Jotai](https://github.com/pmndrs/jotai)
 - [SWR](https://github.com/vercel/swr)
 - [Node.js](https://nodejs.dev/en/learn/)
+- [zx](https://github.com/google/zx)
 
 ## Test
 
