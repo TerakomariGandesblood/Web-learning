@@ -30,7 +30,7 @@ class Professor extends Person {
   // 覆盖
   introduceSelf() {
     console.log(
-      `My name is ${this.name}, and I will be your ${this.teaches} professor.`
+      `My name is ${this.name}, and I will be your ${this.teaches} professor.`,
     );
     this.#grade();
   }
