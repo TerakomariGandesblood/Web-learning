@@ -21,7 +21,7 @@ Web learning notes
 - [Vuex](https://v3.vuex.vuejs.org/zh/)
 - [Element](https://element.eleme.cn/#/zh-CN/component)
 - [unplugin-vue-components](https://github.com/antfu/unplugin-vue-components)
-- [Database](http://www.cyc2018.xyz/数据库/)
+- [Database](https://www.w3school.com.cn/sql/index.asp)
 - [Spring Boot](https://springdoc.cn/spring-boot/)
 
 ## Personal
