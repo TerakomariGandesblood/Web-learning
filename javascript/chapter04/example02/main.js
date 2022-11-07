@@ -1,6 +1,6 @@
 // fetch() API，一个现代的、基于 Promise 的、用于替代 XMLHttpRequest 的方法
 const fetchPromise = fetch(
-  "https://mdn.github.io/learning-area/javascript/apis/fetching-data/can-store/products.json"
+  "https://mdn.github.io/learning-area/javascript/apis/fetching-data/can-store/products.json",
 );
 
 // Promise 有三种状态：
@@ -31,13 +31,13 @@ fetchPromise
 console.log("已发送请求……");
 
 const fetchPromise1 = fetch(
-  "https://mdn.github.io/learning-area/javascript/apis/fetching-data/can-store/products.json"
+  "https://mdn.github.io/learning-area/javascript/apis/fetching-data/can-store/products.json",
 );
 const fetchPromise2 = fetch(
-  "https://mdn.github.io/learning-area/javascript/apis/fetching-data/can-store/not-found"
+  "https://mdn.github.io/learning-area/javascript/apis/fetching-data/can-store/not-found",
 );
 const fetchPromise3 = fetch(
-  "https://mdn.github.io/learning-area/javascript/oojs/json/superheroes.json"
+  "https://mdn.github.io/learning-area/javascript/oojs/json/superheroes.json",
 );
 
 // 合并使用多个 Promise
@@ -68,7 +68,7 @@ Promise.any([fetchPromise1, fetchPromise2, fetchPromise3])
 async function fetchProducts() {
   try {
     const response = await fetch(
-      "https://mdn.github.io/learning-area/javascript/apis/fetching-data/can-store/products.json"
+      "https://mdn.github.io/learning-area/javascript/apis/fetching-data/can-store/products.json",
     );
     if (!response.ok) {
       throw new Error(`HTTP 请求错误：${response.status}`);

@@ -21,7 +21,7 @@ para.textContent = "We hope you enjoyed the ride.";
 section.appendChild(para);
 
 let text = document.createTextNode(
-  " — the premier source for web development knowledge."
+  " — the premier source for web development knowledge.",
 );
 para = document.querySelector("p");
 para.appendChild(text);
