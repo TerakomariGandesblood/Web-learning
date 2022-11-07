@@ -15,7 +15,6 @@ Web learning notes
 
 - [Vue](https://cn.vuejs.org/guide/introduction.html)
 - [create-vue](https://github.com/vuejs/create-vue)
-- [Vue CLI](https://github.com/vuejs/vue-cli)
 - [vue-devtools](https://github.com/vuejs/devtools)
 - [Vue router](https://v3.router.vuejs.org/zh/guide/)
 - [Vuex](https://v3.vuex.vuejs.org/zh/)
