@@ -14,7 +14,7 @@ document.querySelector("#generate").addEventListener("click", () => {
 
 worker.addEventListener("message", (message) => {
   document.querySelector(
-    "#output"
+    "#output",
   ).textContent = `Finished generating ${message.data} primes!`;
 });
 
