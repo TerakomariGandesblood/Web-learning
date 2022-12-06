@@ -40,7 +40,6 @@ Web learning notes
 
 ## Lint
 
-- [Commitizen](https://github.com/commitizen/cz-cli)
 - [Husky](https://github.com/typicode/husky)
 - [actionlint](https://github.com/rhysd/actionlint)
 - [Gitleaks](https://github.com/zricethezav/gitleaks)
