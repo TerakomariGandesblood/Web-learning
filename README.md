@@ -1,29 +1,12 @@
 # Web-learning
 
-[![pre-commit.ci status](https://results.pre-commit.ci/badge/github/TerakomariGandesblood/Web-learning/main.svg)](https://results.pre-commit.ci/latest/github/TerakomariGandesblood/Web-learning/main)
-[![996.icu](https://img.shields.io/badge/link-996.icu-red.svg)](https://996.icu)
-
----
-
 Web learning notes
 
 ## Base
 
 - [Web](https://developer.mozilla.org/zh-CN/docs/Learn/Getting_started_with_the_web)
 
-## Work
-
-- [Vue](https://cn.vuejs.org/guide/introduction.html)
-- [create-vue](https://github.com/vuejs/create-vue)
-- [vue-devtools](https://github.com/vuejs/devtools)
-- [Vue router](https://v3.router.vuejs.org/zh/guide/)
-- [Vuex](https://v3.vuex.vuejs.org/zh/)
-- [Element](https://element.eleme.cn/#/zh-CN/component)
-- [unplugin-vue-components](https://github.com/antfu/unplugin-vue-components)
-- [Database](https://www.w3school.com.cn/sql/index.asp)
-- [Spring Boot](https://springdoc.cn/spring-boot/)
-
-## Personal
+## Libraries
 
 - [JavaScript](https://github.com/javascript-tutorial/zh.javascript.info)
 - [pnpm](https://github.com/pnpm/pnpm)
@@ -46,7 +29,6 @@ Web learning notes
 - [Jotai](https://github.com/pmndrs/jotai)
 - [SWR](https://github.com/vercel/swr)
 - [Node.js](https://nodejs.dev/en/learn/)
-- [zx](https://github.com/google/zx)
 
 ## Test
 
@@ -62,7 +44,6 @@ Web learning notes
 - [Husky](https://github.com/typicode/husky)
 - [actionlint](https://github.com/rhysd/actionlint)
 - [Gitleaks](https://github.com/zricethezav/gitleaks)
-- [markdownlint](https://github.com/DavidAnson/markdownlint-cli2)
 - [commitlint](https://github.com/conventional-changelog/commitlint)
 - [Stylelint](https://github.com/stylelint/stylelint)
 - [ESLint](https://github.com/eslint/eslint)

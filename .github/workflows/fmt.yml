@@ -1,0 +1,28 @@
+name: Fmt
+
+on:
+  push:
+    paths-ignore:
+      - "**.md"
+  pull_request:
+    paths-ignore:
+      - "**.md"
+
+permissions:
+  contents: read
+
+jobs:
+  fmt:
+    name: Fmt
+    runs-on: ubuntu-latest
+
+    steps:
+      # https://github.com/actions/checkout
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - name: Install prettier
+        run: npm install -g prettier
+
+      - name: Run prettier
+        run: prettier --check .
