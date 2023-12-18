@@ -22,7 +22,7 @@ function checkGuess() {
     lowOrHi.textContent = "";
     setGameOver();
   } else if (guessCount === 10) {
-    lastResult.textContent = "!!!游戏结束!!!";
+    lastResult.textContent = "!!! 游戏结束!!!";
     setGameOver();
   } else {
     lastResult.textContent = "你猜错了！";

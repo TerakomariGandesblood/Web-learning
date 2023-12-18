@@ -14,7 +14,7 @@ function sendData(data) {
       result.textContent = JSON.stringify(json["form"]);
     })
     .catch((error) => {
-      alert(`登陆失败: ${error}`);
+      alert(`登陆失败：${error}`);
     });
 }
 

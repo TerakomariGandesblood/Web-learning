@@ -14,7 +14,7 @@ fetchPromise
   .then((response) => {
     // 服务器返回一个错误（如 404 Not Found）时请求成功
     if (!response.ok) {
-      throw new Error(`HTTP 请求错误: ${response.status}`);
+      throw new Error(`HTTP 请求错误：${response.status}`);
     }
 
     return response.json();
@@ -25,7 +25,7 @@ fetchPromise
   // Promise 链
   // 如果将 catch() 添加到 Promise 链的末尾，它就可以在任何异步函数失败时被调用
   .catch((error) => {
-    console.error(`无法获取产品列表: ${error}`);
+    console.error(`无法获取产品列表：${error}`);
   });
 
 console.log("已发送请求……");

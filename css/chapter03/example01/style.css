@@ -36,9 +36,9 @@ p {
   font-style: normal;
   /* 设置粗体 */
   font-weight: bold;
-  /* 转换， uppercase：全部大写 */
+  /* 转换，uppercase：全部大写 */
   text-transform: uppercase;
-  /* 设置文本装饰， underline：下划线 */
+  /* 设置文本装饰，underline：下划线 */
   text-decoration: underline;
 }
 

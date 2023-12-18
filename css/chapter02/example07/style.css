@@ -9,7 +9,7 @@
 /*
   <length>：长度
   绝对长度单位：cm、mm、Q（1/40th of 1cm）、in（英寸）、pc（1/6th of 1in）
-  pt（1/72th of 1in）、px
+  pt (1/72th of 1in), px
   绝对长度单位：em、ex（字符“x”的高度）、ch（数字“0”的宽度）、rem（根元素（<html>）的字体大小）
   lh（元素的 line-height）、vw（视区宽度的 1%）、vh（视区高度的 1%）
   vmin（视区较小尺寸的 1%）、vmax（视区较大尺寸的 1%）
@@ -84,6 +84,6 @@ html {
 
 /*
   <position> 数据类型表示一组 2D 坐标，用于定位一个元素
-  它可以使用关键字 (如 top, left, bottom, right, 以及center）将元素与 2D 框的特定边界对齐，以及表示框的顶部和左侧边缘偏移量的长度
+  它可以使用关键字 (如 top, left, bottom, right, 以及 center）将元素与 2D 框的特定边界对齐，以及表示框的顶部和左侧边缘偏移量的长度
   第一个值水平地设置位置，第二个值垂直地设置位置。如果只指定一个轴的值，另一个轴将默认为 center
 */

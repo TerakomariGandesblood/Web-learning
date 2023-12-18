@@ -36,7 +36,7 @@ forgetBtn.addEventListener("click", function () {
 function nameDisplayCheck() {
   // localStorage 一直存在
   // sessionStorage 浏览器关闭则丢失
-  // 每个域（如google.com 和 amazon.com）都有一个单独的数据存储区
+  // 每个域（如 google.com 和 amazon.com）都有一个单独的数据存储区
   if (localStorage.getItem("name")) {
     let name = localStorage.getItem("name");
     h1.textContent = "Welcome, " + name;
