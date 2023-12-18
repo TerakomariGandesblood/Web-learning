@@ -13,9 +13,8 @@ document.querySelector("#generate").addEventListener("click", () => {
 });
 
 worker.addEventListener("message", (message) => {
-  document.querySelector(
-    "#output"
-  ).textContent = `Finished generating ${message.data} primes!`;
+  document.querySelector("#output").textContent =
+    `Finished generating ${message.data} primes!`;
 });
 
 document.querySelector("#reload").addEventListener("click", () => {
