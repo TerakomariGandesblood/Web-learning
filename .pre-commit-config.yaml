@@ -4,7 +4,7 @@ default_install_hook_types: [pre-commit, commit-msg]
 
 repos:
   - repo: https://github.com/pre-commit/pre-commit-hooks
-    rev: v4.5.0
+    rev: v4.6.0
     hooks:
       - id: check-added-large-files
       - id: check-case-conflict
@@ -21,11 +21,11 @@ repos:
       - id: mixed-line-ending
       - id: trailing-whitespace
   - repo: https://github.com/rhysd/actionlint
-    rev: v1.6.26
+    rev: v1.7.1
     hooks:
       - id: actionlint
   - repo: https://github.com/zricethezav/gitleaks
-    rev: v8.18.1
+    rev: v8.18.3
     hooks:
       - id: gitleaks
 
